@@ -1,0 +1,84 @@
+<!--
+    References: 
+    1) Side nav bar: https://www.w3schools.com/howto/howto_js_sidenav.asp
+    2) Rajdhani Google Fonts: https://fonts.google.com/specimen/Rajdhani?preview.text_type=custom#standard-styles
+    3) Application Requirements: https://wgaesf.org/images/downloads/Resources/2019_Scholarship_Application_Information.pdf
+    4) Chick Evans Image: https://www.usga.org/articles/2010/11/mm-chick-evans-golf-secrets-2147490990.html
+    5) ES Personal Story Youtube Video: https://www.youtube.com/watch?v=90v3__fkgIs&t=16s
+    6) ES Info Youtube Video: https://www.youtube.com/watch?v=dp7b1gGMKoQ
+-->
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="shortcut icon" href="Images/ESLogoGreen.png">
+        
+        <title>Home</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="home.css">
+        <!-- <link rel="stylesheet" href="navBar.css"> -->
+        <link rel="stylesheet" href="navBar.css">
+        <link rel="stylesheet" href="footer.css">
+    </head>
+    <body>
+        <div id="navBar"></div>
+        <div>
+            <br>
+            <br>
+            <h1>Who Are We?</h1>
+            <h4>We are the University of Missouri-Columbia Evans Scholars Chapter, associated with the Western Golf Assocation Evans Scholars Foundation <strong>(WGAESF)</strong>.
+                Evans Scholars are students who are awarded a full housing and tuition college scholarship for demonstrating strong work ethic and leadership as caddies and students.
+                 There are 19 leading universities nationwide that house and enroll Evans Scholars.</h4>
+                 <img class="directorsImg" src="Images/annualDirectors.jpg" alt="annualDirectors Image">
+                 <br>
+                 <hr>
+                 <br>
+                 <h3 class="chickInfo">The name "Evans Scholarship" derives from<br>the founder and American amateur golfer, Charles "Chick" Evans Jr.<br>
+                    Evans partnered with WGA in 1929 and awarded<br>the first two scholarships in 1930 to Northwestern.<br>
+                    Evans established the Evans Scholars Foundation in 1929 to<br> send deserving caddies to college. </h3>
+            
+            
+            <!--Start of link to ES Info youtube video: https://www.youtube.com/watch?v=dp7b1gGMKoQ-->
+            <iframe class="video" src="https://www.youtube.com/embed/dp7b1gGMKoQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!--End of link to ES Info youtube video: https://www.youtube.com/watch?v=dp7b1gGMKoQ-->
+            <!--Start of link for Chick Evans Image: https://wgaesf.org/images/downloads/Resources/2019_Scholarship_Application_Information.pdf -->     
+            <img class="chickImg" src="Images/chick2.jpeg" alt="Chick Evans Image">
+            <!--End of link for Chick Evans Image: https://wgaesf.org/images/downloads/Resources/2019_Scholarship_Application_Information.pdf --> 
+            
+            <h2 class="pStory">View an Evans Scholar's Personal Story:</h2>
+            <!--Start of linke to ES personal story taken from youtube: https://www.youtube.com/watch?v=90v3__fkgIs&t=16s-->
+            <iframe class="video2" src="https://www.youtube.com/embed/90v3__fkgIs" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!--End of link to ES personal story taken from youtube: https://www.youtube.com/watch?v=90v3__fkgIs&t=16s-->
+            
+            <hr>
+            
+        </div>
+        <h1>Criteria of Scholarship Eligibility:</h1>
+        <ul>
+            <!-- Start of requirements taken from: https://wgaesf.org/images/downloads/Resources/2019_Scholarship_Application_Information.pdf -->
+            <li>Applicants must have caddied, regularly and successfully, for a minimum 
+            of two years and <ul></ul>are expected to caddie at their sponsoring club the year they apply for the Scholarship.</li>
+            <li>Applicants must have completed their junior year of high school with above a B average in <ul></ul>college
+            preparatory courses and are required to take the ACT and/or SAT.</li>
+            <li>Applicants must clearly have a need for financial assistance.</li>
+            <li>Applicants must be outstanding in character, integrity and leadership.</li> 
+            <!-- End of requirements taken from: https://wgaesf.org/images/downloads/Resources/2019_Scholarship_Application_Information.pdf -->
+        </ul>
+            <h3>For more details concerning scholarship applications, please visit: <a class="WGAESF" href="https://wgaesf.org/a-life-changing-opportunity/">WGAESF</a></h3>
+        <!-- Start of link to side nav bar assistance with javascript: https://www.w3schools.com/howto/howto_js_sidenav.asp-->
+            <br>
+        <div id="footer"></div>
+        <script>
+        $("#navBar").load("./navBar.html");
+        $("#footer").load("./footer.html");
+         console.log("Javascript is working");
+        </script>
+        <!-- End of link to side nav bar assistance with javascript: https://www.w3schools.com/howto/howto_js_sidenav.asp-->
+    </body>
+</html>

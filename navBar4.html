@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Nav Bar</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="navBar.css">
+</head>
+<body>
+    <div id="navBar" class="header-nav">
+        <div id="mySidenav" class="sidenav">
+            <!-- Start of link to side nav bar assistance with javascript: https://www.w3schools.com/howto/howto_js_sidenav.asp-->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <!-- End of link to side nav bar assitance with javascript: https://www.w3schools.com/howto/howto_js_sidenav.asp-->
+            <a href="homePage.html">Home</a>
+            <a href="getToKnowPage.html">Get to Know Us</a>
+            <a href="ourHistoryPage.html">Our History</a>
+            <a class="otherHousesPage" href="otherHousesPage.html">Other Houses</a>
+        </div>
+        <img src="Images/missourESLogoWhite-H.png" alt="ES Logo">
+        </div>
+        <span class="menu-bar" onclick="openNav()">&#9776;</span>
+  <script>
+      function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+  </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!--
+    References: 
+    1) Side nav bar: https://www.w3schools.com/howto/howto_js_sidenav.asp
+    2) Rajdhani Google Fonts: https://fonts.google.com/specimen/Rajdhani?preview.text_type=custom#standard-styles
+    3) Shadow Button: https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_shadow
+    4) Code and Creed: http://www.orgs.miamioh.edu/evans/main.html#:~:text=The%20Evans%20Scholars%20Creed&text=We%20strive%20for%20group%20unity,of%20respect%20in%20our%20community.
+-->
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="Images/ESLogoGreen.png">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="ourHistory.css">
+        <link rel="stylesheet" href="navBar.css">
+        <link rel="stylesheet" href="footer.css">
+        <title>Our History</title>
+    </head>
+    <body>
+        <div id="navBar"></div>
+            <br> <br>
+            <h1>Our History</h1>
+            <h3>While the Evans Scholar Foundation was established in 1930, the Missouri Evans Scholar house was first established in 1968.<br>Since then, there has been an abundance of dedication to the history of the Missouri Evans Scholar House.<br>The average number of scholars within this house is 40.<br>
+            The Missouri Evans Scholarship House is located on the South End of Mizzou's Campus<br>at the corner of Kentucky Avenue and Tiger Avenue.</h3>
+            <img class="esHouse" src="Images/EShouse.JPG" alt="ES House">
+            <br> <hr> <br>
+            <h3>Please view our code and creed, which is seperated into segments<br>to understand the value of each line percisely.<br>Click "continue" to view each line randomly.</h3>
+            <br>
+        <!-- Start of code used from Wergeles lecture -->
+            <div id="contentBox"></div>
+            <br>
+        <!-- Start of link to shadow button effect: https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_shadow -->
+	        <button class="button" type="button" onclick="getContent()">Continue</button>
+        <!-- End of link to shadow button effect: https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_shadow -->
+        <!-- End of code used from Wergeles lecture -->
+            <br> <br>
+        <!-- Start of Code and Creed taken from Miami Evans Scholars website: http://www.orgs.miamioh.edu/evans/main.html#:~:text=The%20Evans%20Scholars%20Creed&text=We%20strive%20for%20group%20unity,of%20respect%20in%20our%20community.-->
+            <h4 class="fullccQuotes"><strong><u>Entire Code and Creed:</u></strong> <br><br>We as Evans Scholars, strive for ideals of community leadership - achieved not necessarily through popularity, but through character.<br>
+                We cherish the ability to set aside pleasurable activities until the necessary ones are accomplished.<br>
+                We strive for group unity and loyalty through an interaction and appreciation of varied backgrounds and personalities.<br>
+                We strive for public esteem based upon the demonstrated ability to achieve and maintain positions of respect in our community.<br>
+                We represent an educational institution seeking to teach men and women to live and work with each other and to instill in them the ability to embrace individual differences and to respect individual freedoms.<br>
+                Personal growth is our goal; group living is our means.
+            </h4>
+        <!-- End of Code and Creed taken from Miami Evans Scholars website: http://www.orgs.miamioh.edu/evans/main.html#:~:text=The%20Evans%20Scholars%20Creed&text=We%20strive%20for%20group%20unity,of%20respect%20in%20our%20community.-->
+            <div id="footer"></div>
+        <script>
+            $("#navBar").load("./navBar3.html");
+            $("#footer").load("./footer.html");
+            console.log("Javascript is working");
+        </script>
+        <script src="ourHistoryPage.js"></script>
+    </body>
+</html>

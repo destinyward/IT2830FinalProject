@@ -1,0 +1,70 @@
+  .directorsImg {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+
+  hr {
+    width: 90%;
+    border: none;
+    height: 1px;
+    background: rgb(92, 89, 89);
+  }
+
+  li {
+    text-align: left;
+    margin-left: 25%;
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  .chickImg {
+    width: 32%;
+    margin-top: -20%;
+    margin-bottom: 30%;
+    margin-left: 12%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+
+  .video {
+    margin-left: 45%;
+    width: 500px;
+    height: 315px;
+    padding: 20px;
+  }
+
+  .video2 {
+    width: 500px;
+    height: 315px;
+    padding: 20px;
+    margin-left: 45%;
+  }
+
+  .chickInfo {
+    margin-left: 45%;
+    line-height: 2em;
+    
+  }
+
+  a {
+    color: rgb(18, 100, 18);
+    text-decoration: none;
+  }
+
+  a:hover, a:visited {
+    color: rgb(18, 100, 18);
+  }
+
+  h4 {
+    font-size: 22px;
+    line-height: 1.5em;
+    margin-left: 14%;
+    margin-right: 14%;
+  }
+
+  .pStory {
+    margin-top: -40%;
+    margin-left: 45%;
+    line-height: 2em;
+  }

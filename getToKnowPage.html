@@ -1,0 +1,264 @@
+<!--
+    1) Side nav bar: https://www.w3schools.com/howto/howto_js_sidenav.asp
+    2) Rajdhani Google Fonts: https://fonts.google.com/specimen/Rajdhani?preview.text_type=custom#standard-styles
+    3) Info Cards and Card Flip: https://www.youtube.com/watch?v=QGVXmoZWZuw
+    4) Info Description for Cards: https://docs.google.com/document/d/1rD312PwE530UuGfTBFS9HVA1s2kKgplKyO147jIAxVE/edit
+    5) Slide Show: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto
+-->
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="Images/ESLogoGreen.png">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="getToKnow.css">
+        <link rel="stylesheet" href="navBar.css">
+        <link rel="stylesheet" href="footer.css">
+
+        <title>Get to Know Us</title>
+    </head>
+    <body>
+        <div class="header-nav">
+            <div id="mySidenav" class="sidenav">
+                <!-- Start of link to side nav bar assistance with javascript: https://www.w3schools.com/howto/howto_js_sidenav.asp-->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <!-- End of link to side nav bar assitance with javascript: https://www.w3schools.com/howto/howto_js_sidenav.asp-->
+                <a href="homePage.html">Home</a>
+                <a class="getToKnowPage" href="getToKnowPage.html">Get to Know Us</a>
+                <a href="ourHistoryPage.html">Our History</a>
+                <a href="otherHousesPage.html">Other Houses</a>
+            </div>
+            <img src="Images/missourESLogoWhite-H.png" alt="ES Logo">
+            </div>
+            <span class="menu-bar" onclick="openNav()">&#9776;</span>
+            <div>
+                <div class="intro">
+                    <h1 ><strong>Meet our Executive Board</strong></h1>
+                    <p><strong>Click on each member's profile to view their position</strong></p>
+                </div>
+        <!--Start of link used to reference cards and card flip: /* Start of link to reference used to make cards and card flip: https://www.youtube.com/watch?v=QGVXmoZWZuw */-->
+                <div>
+                <div class="twoColumns">
+                    <div class="card">
+                        <div class="innerCard">
+                            <div class="cardFace cardFront">
+                                <h2><strong>Nora Sieckhaus<br><br>President</strong></h2>
+                            </div>
+                            <div class="cardFace cardBack">
+                                <div class="cardContent">
+                                    <div class="cardHeader">
+                                        <img src="Images/nora.PNG" alt="Pic of Nora" class="profilePic">
+                                        <h2>Nora Sieckhaus</h2>
+                                    </div>
+                                    <div class="cardBody">
+                                        <h3>St. Louis, MO</h3>
+                                        <!--Start of Info Description of Cards: https://docs.google.com/document/d/1rD312PwE530UuGfTBFS9HVA1s2kKgplKyO147jIAxVE/edit-->
+                                        <p>The President is a liaison for the Chapter concerning all  community and campus activities. 
+                                            The President will represent the Chapter at  both National Committee conventions and will speak to the WGA about any matter they deem necessary. 
+                                        </p>
+                                        <!--End of Info Description of Cards: https://docs.google.com/document/d/1rD312PwE530UuGfTBFS9HVA1s2kKgplKyO147jIAxVE/edit-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="innerCard">
+                            <div class="cardFace cardFront">
+                                <h2><strong>Megan Martin<br><br>VP of New Scholars</strong></h2>
+                            </div>
+                            <div class="cardFace cardBack">
+                                <div class="cardContent">
+                                    <div class="cardHeader">
+                                        <img src="Images/megan.jpg" alt="Pic of Megan" class="profilePic">
+                                        <h2>Megan Martin</h2>
+                                    </div>
+                                    <div class="cardBody">
+                                        <h3>St. Louis, MO</h3>
+                                        <!--Start of Info Description of Cards: https://docs.google.com/document/d/1rD312PwE530UuGfTBFS9HVA1s2kKgplKyO147jIAxVE/edit-->
+                                        <p>During the New  Scholar semester, the New Scholar Educator is to act as a liaison between 
+                                            the Active Members and the New Scholar Class, and to carry out the desires of the  Chapter concerning New Scholar Activities. 
+                                        </p>
+                                        <!--End of Info Description of Cards: https://docs.google.com/document/d/1rD312PwE530UuGfTBFS9HVA1s2kKgplKyO147jIAxVE/edit-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                    <div class="card">
+                        <div class="innerCard">
+                            <div class="cardFace cardFront">
+                                <h2><strong>Mackenzie Esposito<br><br>Executive Vice President</strong></h2>
+                            </div>
+                            <div class="cardFace cardBack">
+                                <div class="cardContent">
+                                    <div class="cardHeader">
+                                        <img src="Images/kenz.jpg" alt="Pic of Kenz" class="profilePic">
+                                        <h2>Mackenzie Esposito</h2> 
+                                    </div>
+                                    <div class="cardBody">
+                                        <h3>Bowie, MD</h3>
+                                        <!--Start of Info Description of Cards: https://docs.google.com/document/d/1rD312PwE530UuGfTBFS9HVA1s2kKgplKyO147jIAxVE/edit-->
+                                        <p> The EVP is in full charge of running the Annual Evans Scholars Philanthropies and will also bring proposals for all other philanthropies to the Chapter.
+                                        </p>
+                                        <!--End of Info Description of Cards: https://docs.google.com/document/d/1rD312PwE530UuGfTBFS9HVA1s2kKgplKyO147jIAxVE/edit-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="innerCard">
+                            <div class="cardFace cardFront">
+                                 <h2><strong>Collin Rooney<br><br>VP of Administration</strong></h2>
+                            </div>
+                            <div class="cardFace cardBack">
+                                <div class="cardContent">
+                                    <div class="cardHeader">
+                                        <img src="Images/collin.jpg" alt="Pic of Collin" class="profilePic">
+                                        <h2>Collin Rooney</h2>
+                                    </div>
+                                    <div class="cardBody">
+                                        <h3>Wentzville, IL</h3>
+                                        <!--Start of Info Description of Cards: https://docs.google.com/document/d/1rD312PwE530UuGfTBFS9HVA1s2kKgplKyO147jIAxVE/edit-->
+                                        <p>The AVP will supervise all repairs and house improvement projects. The AVP will be responsible for purchasing house supplies, inspecting for fire and safety  hazards, and assign house jobs.
+                                        </p>
+                                        <!--End of Info Description of Cards: https://docs.google.com/document/d/1rD312PwE530UuGfTBFS9HVA1s2kKgplKyO147jIAxVE/edit-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="innerCard">
+                            <div class="cardFace cardFront">
+                                <h2><strong>David Stern<br><br>VP of Finance</strong></h2>
+                            </div>
+                            <div class="cardFace cardBack">
+                                <div class="cardContent">
+                                    <div class="cardHeader">
+                                        <img src="Images/david.jpg" alt="Pic of David" class="profilePic">
+                                        <h2>David Stern</h2>
+                                    </div>
+                                    <div class="cardBody">
+                                        <h3>Glenview, IL</h3>
+                                        <!--Start of Info Description of Cards: https://docs.google.com/document/d/1rD312PwE530UuGfTBFS9HVA1s2kKgplKyO147jIAxVE/edit-->
+                                        <p>The VP of Finance is in charge of establishing a rate of dues that will be sufficient to cover the costs of the Chapter’s utilities and minor maintenance. The VP of Finance also budgets the annual expenses.
+                                        </p>
+                                        <!--End of Info Description of Cards: https://docs.google.com/document/d/1rD312PwE530UuGfTBFS9HVA1s2kKgplKyO147jIAxVE/edit-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="innerCard">
+                            <div class="cardFace cardFront">
+                                <h2><strong>Destiny Ward<br><br>VP of Communications</strong></h2>
+                            </div>
+                            <div class="cardFace cardBack">
+                                <div class="cardContent">
+                                    <div class="cardHeader">
+                                        <img src="Images/destiny.jpg" alt="Pic of Destiny" class="profilePic">
+                                        <h2>Destiny Ward</h2>
+                                    </div>
+                                    <div class="cardBody">
+                                        <h3>Dolton, IL</h3>
+                                        <!--Start of Info Description of Cards: https://docs.google.com/document/d/1rD312PwE530UuGfTBFS9HVA1s2kKgplKyO147jIAxVE/edit-->
+                                        <p>The VP of Communication oversees the chapter’s website and social media  efforts. 
+                                            This position coordinates all house correspondence and is responsible for creating a professional and welcoming image of their Evans Scholars chapter.
+                                        </p>
+                                        <!--End of Info Description of Cards: https://docs.google.com/document/d/1rD312PwE530UuGfTBFS9HVA1s2kKgplKyO147jIAxVE/edit-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="innerCard">
+                            <div class="cardFace cardFront">
+                                <h2><strong><br>Brandi McManigal<br><br>VP of Diversity and Inclusion</strong></h2>
+                            </div>
+                            <div class="cardFace cardBack">
+                                <div class="cardContent">
+                                    <div class="cardHeader">
+                                        <img src="Images/brandi.jpg" alt="Pic of Brandi" class="profilePic">
+                                        <h2>Brandi McManigal</h2>
+                                    </div>
+                                    <div class="cardBody">
+                                        <h3>Oak Forest, IL</h3>
+                                        <!--Start of Info Description of Cards: https://docs.google.com/document/d/1rD312PwE530UuGfTBFS9HVA1s2kKgplKyO147jIAxVE/edit-->
+                                        <p>The VP of Diversity and Inclusion strives for equity of all backgrounds. 
+                                            The purpose of this position is to increase our awareness and understanding of ourselves and the communities we serve.
+                                        </p>
+                                        <!--End of Info Description of Cards: https://docs.google.com/document/d/1rD312PwE530UuGfTBFS9HVA1s2kKgplKyO147jIAxVE/edit-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        <!--End of link used to reference cards and card flip: https://www.youtube.com/watch?v=QGVXmoZWZuw */-->
+                <br> <br>
+                <hr>
+                <div class="intro2">
+                    <h1><strong>Four Pillars of the Evans Scholarship</strong></h1>
+                <p><strong>Evans Scholars are expected to live together under the four pillars of the Evans Scholarship;<br>scholarship, leadership, group living, and house maintenance.</strong></p>
+                </div>
+                <br> <br> <br>
+            <!-- Start of reference of slide show: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto -->
+                <div class="slideshow-container">
+                    <div class="slides fade">
+                      <div class="number">1/4</div>
+                      <img class="slideImg" src="Images/scholarship.jpg" alt="Scholarship Pic">
+                      <div class="text">Scholarship</div>
+                    </div>
+                    
+                    <div class="slides fade">
+                      <div class="number">2/4</div>
+                      <img class="slideImg" src="Images/leadership.jpg" alt="Leadership Pic">
+                      <div class="text">Leadership</div>
+                    </div>
+                    
+                    <div class="slides fade">
+                      <div class="number">3/4</div>
+                      <img class="slideImg" src="Images/groupLiving.jpg" alt="Group Living Pic">
+                      <div class="text">Group Living</div>
+                    </div>
+
+                    <div class="slides fade">
+                        <div class="number">4/4</div>
+                        <img class="slideImg" src="Images/houseMain.jpg" alt="House Maintenance">
+                        <div class="text">House<br>Maintenance</div>
+                      </div>
+                    
+                    </div>
+                    <br> <br> <br>
+                    
+                    <div>
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                </div>
+            <!-- End of reference of slide show: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto -->
+            <div id="footer"></div>
+        <script>
+            $("#footer").load("./footer.html");
+            console.log("Javascript is working");
+        </script>
+        <script src="getToKnowPage.js"></script>
+    </body>
+</html>

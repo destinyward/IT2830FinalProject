@@ -1,0 +1,91 @@
+<!--
+    1) Side nav bar: https://www.w3schools.com/howto/howto_js_sidenav.asp
+    2) Rajdhani Google Fonts: https://fonts.google.com/specimen/Rajdhani?preview.text_type=custom#standard-styles
+    3) Social Media Buttons: https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
+    4) Dynamic Hide and Show: https://stackoverflow.com/questions/51210764/dynamically-show-and-hide-fields-based-on-select-box-selection-for-loop/51211116
+    5) WGAESF Scholarship Houses Photos: https://wgaesf.org/scholarship-houses/?shadowbox=0
+-->
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="Images/ESLogoGreen.png">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="otherHouses.css">
+        <link rel="stylesheet" href="navBar.css">
+        <link rel="stylesheet" href="footer.css">
+
+        <title>Contact Us</title>
+    </head>
+    <body>
+        <div id="navBar"></div>
+            <br><br>
+
+            <h2>View current nationwide Evans Scholars Houses by selecting a university within the drop down menu.</h2><br>
+
+            <div class="container">
+                <form id="form">
+                <label>Chapter: </label>
+                <select id="select" name="select">
+                    <option value="" selected>Select a University</option>
+                    <option value="chicago">University of Chicago</option>
+                    <option value="colorado">University of Colorado</option>
+                    <option value="illinois">University of Illinois</option>
+                    <option value="indiana">University of Indiana</option>
+                    <option value="kansas">University of Kansas</option>
+                    <option value="marquette">Marquette University</option>
+                    <option value="miami">Miami University</option>
+                    <option value="michigan">University of Michigan</option>
+                    <option value="m-state">Michigan State University</option>
+                    <option value="minnesota">University of Minnesota</option>
+                    <option value="missouri">University of Missouri-Columbia</option>
+                    <option value="nwestern">Northwestern University</option>
+                    <option value="ndame">University of Notre Dame</option>
+                    <option value="ohio-state">Ohio State University</option>
+                    <option value="oregon">University of Oregon</option>
+                    <option value="penn">Penn State University</option>
+                    <option value="purdue">Purdue University</option>
+                    <option value="washington">University of Washington</option>
+                    <option value="wisconsin">University of Wisconsin</option>
+                <!-- <input type="button" value="Reset" onclick="resetFunction()"> -->
+                </select>
+                <!--Start of link to all scholarship house photos taken from WGAESF website: https://wgaesf.org/scholarship-houses/?shadowbox=0-->
+                    <input id="chicago" class="photos" type="image" name="chicago" src="Images/chicago.jpg" alt="chicago">
+                    <input id="colorado" class="photos" type="image" name="colorado" src="Images/colorado.jpg" alt="colorado">
+                    <input id="illinois" class="photos" type="image" name="illinois" src="Images/illinois.jpg" alt="illinois">
+                    <input id="indiana" class="photos" type="image" name="indiana" src="Images/indiana.jpg" alt="indiana">
+                    <input id="kansas" class="photos" type="image" name="kansas" src="Images/kansas.jpg" alt="kansas">
+                    <input id="marquette" class="photos" type="image" name="marquette" src="Images/marquette.jpg" alt="marquette">
+                    <input id="miami" class="photos" type="image" name="miami" src="Images/miami.jpg" alt="miami">
+                    <input id="michigan" class="photos" type="image" name="michigan" src="Images/michigan.jpg" alt="michigan">
+                    <input id="m-state" class="photos" type="image" name="m-state" src="Images/michigan-state.jpg" alt="michigan state">
+                    <input id="minnesota" class="photos" type="image" name="minnesota" src="Images/minnesota.jpg" alt="minnesota">
+                    <input id="missouri" class="photos" type="image" name="missouri" src="Images/missouri.jpg" alt="missouri">
+                    <input id="nwestern" class="photos" type="image" name="nwestern" src="Images/nwestern.jpg" alt="north western">
+                    <input id="ndame" class="photos" type="image" name="ndame" src="Images/ndame.jpg" alt="notre dame">
+                    <input id="ohio-state" class="photos" type="image" name="ohiostate" src="Images/ohio-state.jpg" alt="ohio state">
+                    <input id="oregon" class="photos" type="image" name="oregon" src="Images/oregon.jpg" alt="oregon">
+                    <input id="penn" class="photos" type="image" name="penn" src="Images/penn-state.jpg" alt="penn state">
+                    <input id="purdue" class="photos" type="image" name="purdue" src="Images/purdue.jpg" alt="purdue">
+                    <input id="washington" class="photos" type="image" name="washington" src="Images/washington.jpg" alt="washington">
+                    <input id="wisconsin" class="photos" type="image" name="wisconsin" src="Images/wisconsin.jpg" alt="wisconsin"> 
+                <!--End of link to all scholarship house photos taken from WGAESF website: https://wgaesf.org/scholarship-houses/?shadowbox=0-->
+                </form>
+            </div>
+            
+            <div id="footer"></div>
+            <script>
+                $("#navBar").load("./navBar4.html");
+                $("#footer").load("./footer.html");
+                console.log("Javascript is working");
+            </script>
+
+        <script src="otherHousesPage.js"></script>
+    </body>
+</html>
